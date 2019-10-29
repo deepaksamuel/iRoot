@@ -12,4 +12,15 @@ d) Edit the plot style like color / fonts / scales etc.
 
 and more importantly, all in a single GUI.
 
+##Binaries:
+
+Windows: Binaries are available in the releases section. No need to install ROOT. ROOT 6 comes along with the setup. Make sure that the enviroment variables do not have any ROOTSYS variables.
+
+Linux: Download the source code and compile. Ubuntu 14 compiled binaries are in the releases section.
+
+![alt text](https://github.com/deepaksamuel/iRoot/blob/master/screenshot1.PNG)
+![alt text](https://github.com/deepaksamuel/iRoot/blob/master/screenshot2.PNG)
+![alt text](https://github.com/deepaksamuel/iRoot/blob/master/screenshot3.PNG)
+
+
 Your feedback is important. Please write to me at deepaksamuel@gmail.com
