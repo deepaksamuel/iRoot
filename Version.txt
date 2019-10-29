@@ -1,0 +1,2 @@
+iRoot (beta) is a simple GUI based program built using ROOT and Qt for data analysis. The basic data structure TTree class from ROOT. This class has many interesting features that makes analysis simpler and faster. iRoot is a compilation of useful methods in this class using a GUI. For further queries, please write to deepaksamuel@gmail.com. WARNING: DO NOT INSTALL IN LOCATIONS THAT REQUIRE ADMIN PRIVILIGES (Program Files etc.,)
+

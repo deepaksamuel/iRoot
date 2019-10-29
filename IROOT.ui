@@ -1,0 +1,3492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IROOT</class>
+ <widget class="QMainWindow" name="IROOT">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2395</width>
+    <height>739</height>
+   </rect>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>IROOT</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QToolTip { color: rgb(0, 0, 0); background-color:rgb(255, 255, 255); border: none; }</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>60</width>
+    <height>60</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>2</number>
+    </property>
+    <property name="margin">
+     <number>2</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="topWidget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>75</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>75</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QToolButton" name="backtoOpeningPage">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Home</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/icons/icons/windows8_icons/Very_Basic/home.png</normaloff>:/icons/icons/windows8_icons/Very_Basic/home.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="popupMode">
+          <enum>QToolButton::DelayedPopup</enum>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="openFiles">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Open</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/icons/icons/windows8_icons/Very_Basic/folder.png</normaloff>:/icons/icons/windows8_icons/Very_Basic/folder.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="popupMode">
+          <enum>QToolButton::DelayedPopup</enum>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="save">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/icons/icons/windows8_icons/System/save.png</normaloff>:/icons/icons/windows8_icons/System/save.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>25</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="popupMode">
+          <enum>QToolButton::DelayedPopup</enum>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="addNewCanvas">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>New pad</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/icons/icons/windows8_icons/Editing/cllipboard.png</normaloff>:/icons/icons/windows8_icons/Editing/cllipboard.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="popupMode">
+          <enum>QToolButton::InstantPopup</enum>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="addWorksheet">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>New table</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/icons/icons/windows8_icons/Timeline_List_Grid/grid.png</normaloff>:/icons/icons/windows8_icons/Timeline_List_Grid/grid.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="popupMode">
+          <enum>QToolButton::InstantPopup</enum>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="font">
+          <font>
+           <family>Segoe UI Light</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="tab_2">
+          <attribute name="title">
+           <string>FONTS</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <property name="topMargin">
+            <number>2</number>
+           </property>
+           <property name="rightMargin">
+            <number>11</number>
+           </property>
+           <property name="bottomMargin">
+            <number>2</number>
+           </property>
+           <item>
+            <widget class="QToolButton" name="bold">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>8</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>Bold</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/windows8_icons/Text_Formatting/bold.png</normaloff>:/icons/icons/windows8_icons/Text_Formatting/bold.png</iconset>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="italic">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>8</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>Italic</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/windows8_icons/Text_Formatting/italic.png</normaloff>:/icons/icons/windows8_icons/Text_Formatting/italic.png</iconset>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="fontcomboBox">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>183</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="toolTip">
+              <string>Choose font</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+     border: 1px solid gray;
+     border-radius: 3px;
+     padding: 1px 18px 1px 3px;
+     min-width:10em;
+
+ }
+
+ QComboBox:editable {
+     background: white;
+ }
+
+ QComboBox:!editable, QComboBox::drop-down:editable {
+      background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                  stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+ }
+
+ /* QComboBox gets the &quot;on&quot; state when the popup is open */
+ QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                 stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+ }
+
+ QComboBox:on { /* shift the text when the popup opens */
+     padding-top: 3px;
+     padding-left: 4px;
+ }
+
+ QComboBox::drop-down {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 25px;
+
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+ }
+
+ QComboBox::down-arrow {
+     image: url(:/icons/icons/others/comboArrow.png);
+ }
+
+ QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+     top: 1px;
+     left: 1px;
+ }</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Times New Roman</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Arial</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Courier New</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Symbol</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Wingdings</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QDoubleSpinBox" name="fontSize">
+             <property name="minimumSize">
+              <size>
+               <width>83</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Font size</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QDoubleSpinBox {
+     border: 1px solid gray;
+     border-radius: 3px;
+     padding: 1px 18px 1px 3px;
+     min-width:3.5em;
+
+font: 8pt &quot;Segoe UI&quot;;
+ }
+
+ QComboBox:editable {
+     background: white;
+ }
+
+ QComboBox:!editable, QComboBox::drop-down:editable {
+      background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                  stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+ }
+
+ /* QComboBox gets the &quot;on&quot; state when the popup is open */
+ QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                 stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+ }
+
+ QComboBox:on { /* shift the text when the popup opens */
+     padding-top: 3px;
+     padding-left: 4px;
+ }
+
+ QComboBox::drop-down {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 25px;
+
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+ }
+
+ QComboBox::down-arrow {
+     image: url(C:/Users/samuel/Desktop/windows8_icons/Arrows/down.png);
+ }
+
+ QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+     top: 1px;
+     left: 1px;
+ }</string>
+             </property>
+             <property name="decimals">
+              <number>3</number>
+             </property>
+             <property name="minimum">
+              <double>0.005000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>10.000000000000000</double>
+             </property>
+             <property name="singleStep">
+              <double>0.010000000000000</double>
+             </property>
+             <property name="value">
+              <double>0.020000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="fontColor">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>Font color</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/others/Actions-format-text-color-icon.png</normaloff>:/icons/icons/others/Actions-format-text-color-icon.png</iconset>
+             </property>
+             <property name="popupMode">
+              <enum>QToolButton::DelayedPopup</enum>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonIconOnly</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+             <property name="arrowType">
+              <enum>Qt::NoArrow</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="axisFont">
+             <property name="text">
+              <string>Axis</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="titleFont">
+             <property name="text">
+              <string>Title</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="statsFont">
+             <property name="text">
+              <string>Statistics</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="legendFont">
+             <property name="text">
+              <string>Legends</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_3">
+          <attribute name="title">
+           <string>VIEW</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <property name="margin">
+            <number>2</number>
+           </property>
+           <item>
+            <widget class="QToolButton" name="viewFiles">
+             <property name="text">
+              <string>Files</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/windows8_icons/Folders/dossier.png</normaloff>:/icons/icons/windows8_icons/Folders/dossier.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="viewTemplates">
+             <property name="text">
+              <string>Templates</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/windows8_icons/Charts/pie.png</normaloff>:/icons/icons/windows8_icons/Charts/pie.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="viewSetings">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+              </font>
+             </property>
+             <property name="text">
+              <string>Fit data</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/others/fit.png</normaloff>:/icons/icons/others/fit.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="popupMode">
+              <enum>QToolButton::InstantPopup</enum>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="viewCompiler">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+              </font>
+             </property>
+             <property name="text">
+              <string>Compiler</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/others/cplusplus.png</normaloff>:/icons/icons/others/cplusplus.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="popupMode">
+              <enum>QToolButton::InstantPopup</enum>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab">
+          <attribute name="title">
+           <string>GRIDS/SCALES</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_12">
+           <item>
+            <widget class="QCheckBox" name="gridX">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+              </font>
+             </property>
+             <property name="text">
+              <string>Grids on X axis</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="gridY">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+              </font>
+             </property>
+             <property name="text">
+              <string>Grids on Y axis</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="logX">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+              </font>
+             </property>
+             <property name="text">
+              <string>Log X axis</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="logY">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+              </font>
+             </property>
+             <property name="text">
+              <string>Log Y axis</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_5">
+          <attribute name="title">
+           <string>INSERT</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <property name="leftMargin">
+            <number>2</number>
+           </property>
+           <property name="topMargin">
+            <number>2</number>
+           </property>
+           <property name="bottomMargin">
+            <number>2</number>
+           </property>
+           <item>
+            <widget class="QToolButton" name="insertGraphicalCut">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="toolTip">
+              <string>Use a region in the plot as the cut string.</string>
+             </property>
+             <property name="text">
+              <string>Graphical cut</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/others/Scissors.png</normaloff>:/icons/icons/others/Scissors.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="insertArrow">
+             <property name="toolTip">
+              <string>Insert an arrow in the pad</string>
+             </property>
+             <property name="text">
+              <string>Arrow</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/others/arrow.png</normaloff>:/icons/icons/others/arrow.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="insertArc">
+             <property name="toolTip">
+              <string>Insert an arc in the pad</string>
+             </property>
+             <property name="text">
+              <string>Arc</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/others/arc.png</normaloff>:/icons/icons/others/arc.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="insertEllipse">
+             <property name="toolTip">
+              <string>Insert an ellipse in the pad</string>
+             </property>
+             <property name="text">
+              <string>Ellipse</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/others/ellipse.png</normaloff>:/icons/icons/others/ellipse.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="insertLine">
+             <property name="toolTip">
+              <string>Insert a line in the pad</string>
+             </property>
+             <property name="text">
+              <string>Line</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/others/line.png</normaloff>:/icons/icons/others/line.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="insertMarker">
+             <property name="toolTip">
+              <string>Insert a marker in the pad</string>
+             </property>
+             <property name="text">
+              <string>Marker</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/others/marker.png</normaloff>:/icons/icons/others/marker.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="insertText">
+             <property name="toolTip">
+              <string>Insert text in the pad</string>
+             </property>
+             <property name="text">
+              <string>Text</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/others/text.png</normaloff>:/icons/icons/others/text.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="resetInsertMode">
+             <property name="font">
+              <font>
+               <pointsize>6</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>Resets insert mode</string>
+             </property>
+             <property name="text">
+              <string>Reset</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/others/mouse_arrow.png</normaloff>:/icons/icons/others/mouse_arrow.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>10</width>
+               <height>10</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>2156</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QComboBox" name="plotTemplate">
+         <property name="minimumSize">
+          <size>
+           <width>103</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QComboBox {
+     border: 1px solid gray;
+     border-radius: 3px;
+     padding: 1px 18px 1px 3px;
+     min-width:5em;
+
+
+ }
+
+ QComboBox:editable {
+     background: white;
+ }
+
+ QComboBox:!editable, QComboBox::drop-down:editable {
+      background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                  stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+ }
+
+ /* QComboBox gets the &quot;on&quot; state when the popup is open */
+ QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                 stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+ }
+
+ QComboBox:on { /* shift the text when the popup opens */
+     padding-top: 3px;
+     padding-left: 4px;
+ }
+
+ QComboBox::drop-down {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 25px;
+
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+ }
+
+ QComboBox::down-arrow {
+     image: url(:/icons/icons/others/comboArrow.png);
+ }
+
+ QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+     top: 1px;
+     left: 1px;
+ }</string>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="frame">
+          <bool>false</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>Classic</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Plain</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Bold</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Video</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Pub</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Modern</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="about">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/icons/icons/windows8_icons/Sections_of_Website/about.png</normaloff>:/icons/icons/windows8_icons/Sections_of_Website/about.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="popupMode">
+          <enum>QToolButton::InstantPopup</enum>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextBesideIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="mainStackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="openingPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="margin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QFrame" name="recentFilesFrame">
+          <property name="minimumSize">
+           <size>
+            <width>500</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>20</pointsize>
+            <weight>75</weight>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(129, 222, 255);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <property name="spacing">
+            <number>1</number>
+           </property>
+           <property name="margin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QToolButton" name="gotoWorkspace">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Light</family>
+               <pointsize>12</pointsize>
+               <italic>false</italic>
+               <underline>false</underline>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string>Go to workspace...</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/metro.icons/black/next.png</normaloff>:/icons/icons/metro.icons/black/next.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="openRootFile">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Light</family>
+               <pointsize>12</pointsize>
+               <italic>false</italic>
+               <underline>false</underline>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string>Open ROOT files containing a tree</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/others/rootfile.png</normaloff>:/icons/icons/others/rootfile.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="openMultipleRootFile">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Light</family>
+               <pointsize>12</pointsize>
+               <italic>false</italic>
+               <underline>false</underline>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string>Open multiple ROOT files in different directories using keyword search</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/others/multiplerootfile.png</normaloff>:/icons/icons/others/multiplerootfile.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="ImportAscii">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Light</family>
+               <pointsize>12</pointsize>
+               <italic>false</italic>
+               <underline>false</underline>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string>Import an ASCII file into a worksheet (comma, tab or any other delimiter)</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/others/asciifile.png</normaloff>:/icons/icons/others/asciifile.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="convertAsciitoTree">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Light</family>
+               <pointsize>12</pointsize>
+               <italic>false</italic>
+               <underline>false</underline>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string>Convert an ASCII file into tree</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/others/convert.png</normaloff>:/icons/icons/others/convert.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="convertbinarytoTree">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Light</family>
+               <pointsize>12</pointsize>
+               <italic>false</italic>
+               <underline>false</underline>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string>Convert a binary file into tree</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/icons/others/binary-icon.png</normaloff>:/icons/icons/others/binary-icon.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>15</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>   Recent files:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="Line" name="line">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QStackedWidget" name="frontPageWidgets">
+             <property name="currentIndex">
+              <number>1</number>
+             </property>
+             <widget class="QWidget" name="page"/>
+             <widget class="QWidget" name="page_2">
+              <layout class="QVBoxLayout" name="verticalLayout_12">
+               <property name="spacing">
+                <number>1</number>
+               </property>
+               <property name="margin">
+                <number>1</number>
+               </property>
+               <item>
+                <widget class="QTreeWidget" name="recentFiles">
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI Light</family>
+                   <pointsize>12</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::NoFrame</enum>
+                 </property>
+                 <property name="alternatingRowColors">
+                  <bool>false</bool>
+                 </property>
+                 <property name="indentation">
+                  <number>40</number>
+                 </property>
+                 <property name="animated">
+                  <bool>true</bool>
+                 </property>
+                 <property name="columnCount">
+                  <number>1</number>
+                 </property>
+                 <attribute name="headerVisible">
+                  <bool>false</bool>
+                 </attribute>
+                 <column>
+                  <property name="text">
+                   <string>Recently opened files</string>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI Light</family>
+                    <pointsize>12</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="background">
+                   <color>
+                    <red>255</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                   </color>
+                  </property>
+                 </column>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Minimum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="workingPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="margin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QSplitter" name="splitter">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <widget class="QStackedWidget" name="leftStackWidget">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="currentIndex">
+            <number>3</number>
+           </property>
+           <widget class="QWidget" name="filesPage">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <property name="spacing">
+              <number>3</number>
+             </property>
+             <property name="margin">
+              <number>3</number>
+             </property>
+             <item>
+              <widget class="QSplitter" name="splitter_2">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <widget class="QWidget" name="layoutWidget">
+                <layout class="QVBoxLayout" name="verticalLayout_3">
+                 <property name="spacing">
+                  <number>1</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="Line" name="line_9">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="fileTools" native="true">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 255, 255);</string>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_15">
+                    <property name="spacing">
+                     <number>2</number>
+                    </property>
+                    <property name="margin">
+                     <number>2</number>
+                    </property>
+                    <item>
+                     <widget class="QToolButton" name="clear_files">
+                      <property name="font">
+                       <font>
+                        <family>Segoe UI</family>
+                        <pointsize>8</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="toolTip">
+                       <string>Clears all the open files</string>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(158, 158, 158);
+color: rgb(255, 255, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>CLEAR</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="resources.qrc">
+                        <normaloff>:/icons/icons/metro.icons/black/cancel.png</normaloff>:/icons/icons/metro.icons/black/cancel.png</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>15</width>
+                        <height>15</height>
+                       </size>
+                      </property>
+                      <property name="toolButtonStyle">
+                       <enum>Qt::ToolButtonTextBesideIcon</enum>
+                      </property>
+                      <property name="autoRaise">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QToolButton" name="chainFiles">
+                      <property name="font">
+                       <font>
+                        <family>Segoe UI</family>
+                        <pointsize>8</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="toolTip">
+                       <string>Treat all the opened files as one</string>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(158, 158, 158);
+color: rgb(255, 255, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>CHAIN</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="resources.qrc">
+                        <normaloff>:/icons/icons/windows8_icons/Very_Basic/link.png</normaloff>:/icons/icons/windows8_icons/Very_Basic/link.png</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>15</width>
+                        <height>15</height>
+                       </size>
+                      </property>
+                      <property name="toolButtonStyle">
+                       <enum>Qt::ToolButtonTextBesideIcon</enum>
+                      </property>
+                      <property name="autoRaise">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QCheckBox" name="multiFileMode">
+                      <property name="font">
+                       <font>
+                        <family>Segoe UI</family>
+                        <pointsize>8</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="toolTip">
+                       <string>Keep previous files open when switching to another file</string>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(158, 158, 158);
+color: rgb(255, 255, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>MULTIFILE MODE</string>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>20</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QCheckBox" name="applyFilterToAll">
+                      <property name="font">
+                       <font>
+                        <family>Segoe UI</family>
+                        <pointsize>8</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="toolTip">
+                       <string>Automatically applies the current filter to all the trees</string>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(158, 158, 158);
+color: rgb(255, 255, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>AUTO FILTER</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="fileTools_2" native="true">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 255, 255);</string>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_16">
+                    <property name="spacing">
+                     <number>2</number>
+                    </property>
+                    <property name="margin">
+                     <number>2</number>
+                    </property>
+                    <item>
+                     <widget class="QLineEdit" name="filterString">
+                      <property name="placeholderText">
+                       <string>Enter filter string here</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QToolButton" name="filterEntries">
+                      <property name="font">
+                       <font>
+                        <family>Segoe UI</family>
+                        <pointsize>7</pointsize>
+                       </font>
+                      </property>
+                      <property name="toolTip">
+                       <string>Filter current tree</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="resources.qrc">
+                        <normaloff>:/icons/icons/others/filter.png</normaloff>:/icons/icons/others/filter.png</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>15</width>
+                        <height>15</height>
+                       </size>
+                      </property>
+                      <property name="toolButtonStyle">
+                       <enum>Qt::ToolButtonTextBesideIcon</enum>
+                      </property>
+                      <property name="autoRaise">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTreeWidget" name="filesWidget">
+                   <property name="font">
+                    <font>
+                     <pointsize>8</pointsize>
+                     <weight>50</weight>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(98, 98, 98);
+background-color: rgb(255, 255, 255);</string>
+                   </property>
+                   <property name="alternatingRowColors">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExpandDelay">
+                    <number>4</number>
+                   </property>
+                   <property name="uniformRowHeights">
+                    <bool>true</bool>
+                   </property>
+                   <property name="animated">
+                    <bool>true</bool>
+                   </property>
+                   <property name="headerHidden">
+                    <bool>true</bool>
+                   </property>
+                   <attribute name="headerVisible">
+                    <bool>false</bool>
+                   </attribute>
+                   <attribute name="headerCascadingSectionResizes">
+                    <bool>true</bool>
+                   </attribute>
+                   <attribute name="headerHighlightSections">
+                    <bool>true</bool>
+                   </attribute>
+                   <attribute name="headerMinimumSectionSize">
+                    <number>55</number>
+                   </attribute>
+                   <attribute name="headerShowSortIndicator" stdset="0">
+                    <bool>true</bool>
+                   </attribute>
+                   <column>
+                    <property name="text">
+                     <string>File</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Entries</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Tree name</string>
+                    </property>
+                   </column>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="layoutWidget">
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <property name="spacing">
+                  <number>1</number>
+                 </property>
+                 <item>
+                  <widget class="Line" name="line_5">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_2">
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI Light</family>
+                     <pointsize>10</pointsize>
+                     <weight>50</weight>
+                     <bold>false</bold>
+                     <underline>false</underline>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(0, 0, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Branches</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTreeWidget" name="branchWidget">
+                   <property name="font">
+                    <font>
+                     <pointsize>8</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(98, 98, 98);
+background-color: rgb(255, 255, 255);</string>
+                   </property>
+                   <property name="alternatingRowColors">
+                    <bool>false</bool>
+                   </property>
+                   <property name="selectionMode">
+                    <enum>QAbstractItemView::ExtendedSelection</enum>
+                   </property>
+                   <attribute name="headerVisible">
+                    <bool>false</bool>
+                   </attribute>
+                   <column>
+                    <property name="text">
+                     <string notr="true">Branch</string>
+                    </property>
+                   </column>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="plotSettingsPage">
+            <layout class="QVBoxLayout" name="verticalLayout_7"/>
+           </widget>
+           <widget class="QWidget" name="templatesPage">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <property name="margin">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QCheckBox" name="previewTemplateStyle">
+               <property name="font">
+                <font>
+                 <family>Segoe UI Light</family>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Preview</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_10">
+               <property name="spacing">
+                <number>1</number>
+               </property>
+               <item>
+                <widget class="QLineEdit" name="styleString">
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI Light</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Enter style string here</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QToolButton" name="resetTemplateStyles">
+                 <property name="maximumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="toolTip">
+                  <string>Reset</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/icons/windows8_icons/Window_Controls/close.png</normaloff>:/icons/icons/windows8_icons/Window_Controls/close.png</iconset>
+                 </property>
+                 <property name="toolButtonStyle">
+                  <enum>Qt::ToolButtonIconOnly</enum>
+                 </property>
+                 <property name="autoRaise">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QTreeWidget" name="templateOptions">
+               <property name="font">
+                <font>
+                 <family>Segoe UI Light</family>
+                 <pointsize>10</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="selectionMode">
+                <enum>QAbstractItemView::MultiSelection</enum>
+               </property>
+               <property name="headerHidden">
+                <bool>true</bool>
+               </property>
+               <column>
+                <property name="text">
+                 <string notr="true">1</string>
+                </property>
+               </column>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="fitPage">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_11">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <property name="margin">
+              <number>2</number>
+             </property>
+             <item>
+              <layout class="QGridLayout" name="gridLayout_2">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_5">
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Function</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <layout class="QHBoxLayout" name="horizontalLayout_14">
+                 <property name="spacing">
+                  <number>2</number>
+                 </property>
+                 <item>
+                  <widget class="QComboBox" name="fitFunction">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>193</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI</family>
+                     <pointsize>8</pointsize>
+                     <weight>50</weight>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QComboBox {
+     border: 1px solid gray;
+     border-radius: 3px;
+     padding: 1px 18px 1px 3px;
+     min-width:10em;
+
+font: 8pt &quot;Segoe UI&quot;;
+ }
+
+ QComboBox:editable {
+     background: white;
+ }
+
+ QComboBox:!editable, QComboBox::drop-down:editable {
+      background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                  stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+ }
+
+ /* QComboBox gets the &quot;on&quot; state when the popup is open */
+ QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                 stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+ }
+
+ QComboBox:on { /* shift the text when the popup opens */
+     padding-top: 3px;
+     padding-left: 4px;
+ }
+
+ QComboBox::drop-down {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 25px;
+
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+ }
+
+ QComboBox::down-arrow {
+     image: url(:/icons/icons/others/comboArrow.png);
+ }
+
+ QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+     top: 1px;
+     left: 1px;
+ }</string>
+                   </property>
+                   <property name="editable">
+                    <bool>true</bool>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>gaus</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>pol1</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>pol2</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>pol3</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>[0]+x*[1]</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>expo</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>landau</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_6">
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Range</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <layout class="QHBoxLayout" name="horizontalLayout_8">
+                 <item>
+                  <widget class="QDoubleSpinBox" name="rangeMin">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI</family>
+                     <pointsize>8</pointsize>
+                     <weight>50</weight>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 255, 255);</string>
+                   </property>
+                   <property name="minimum">
+                    <double>-999999999.000000000000000</double>
+                   </property>
+                   <property name="maximum">
+                    <double>999999999.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_13">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI</family>
+                     <pointsize>8</pointsize>
+                     <weight>50</weight>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(0, 0, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string> to </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDoubleSpinBox" name="rangeMax">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI</family>
+                     <pointsize>8</pointsize>
+                     <weight>50</weight>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 255, 255);</string>
+                   </property>
+                   <property name="minimum">
+                    <double>-999999999.000000000000000</double>
+                   </property>
+                   <property name="maximum">
+                    <double>999999999.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="label_11">
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Options</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <layout class="QHBoxLayout" name="horizontalLayout_11">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QLineEdit" name="fitOptions">
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI</family>
+                     <pointsize>8</pointsize>
+                     <italic>true</italic>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 255, 255);</string>
+                   </property>
+                   <property name="placeholderText">
+                    <string>fit options</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="chooseFitOptions">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>30</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string>+</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/icons/icons/windows8_icons/Very_Basic/plus.png</normaloff>:/icons/icons/windows8_icons/Very_Basic/plus.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>30</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="autoRaise">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="3" column="1">
+                <layout class="QHBoxLayout" name="horizontalLayout_13">
+                 <item>
+                  <widget class="QToolButton" name="moreObjects">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI</family>
+                     <pointsize>9</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="toolTip">
+                    <string>Select Objects</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(158, 158, 158);
+color: rgb(255, 255, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string>SELECT</string>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="popupMode">
+                    <enum>QToolButton::InstantPopup</enum>
+                   </property>
+                   <property name="toolButtonStyle">
+                    <enum>Qt::ToolButtonTextBesideIcon</enum>
+                   </property>
+                   <property name="autoRaise">
+                    <bool>true</bool>
+                   </property>
+                   <property name="arrowType">
+                    <enum>Qt::NoArrow</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="fit">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI</family>
+                     <pointsize>9</pointsize>
+                     <weight>75</weight>
+                     <italic>false</italic>
+                     <bold>true</bold>
+                     <kerning>false</kerning>
+                    </font>
+                   </property>
+                   <property name="toolTip">
+                    <string>Fit the selected objects</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(158, 158, 158);
+color: rgb(255, 255, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string>FIT</string>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>10</width>
+                     <height>10</height>
+                    </size>
+                   </property>
+                   <property name="toolButtonStyle">
+                    <enum>Qt::ToolButtonTextBesideIcon</enum>
+                   </property>
+                   <property name="autoRaise">
+                    <bool>true</bool>
+                   </property>
+                   <property name="arrowType">
+                    <enum>Qt::NoArrow</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="plotFunction">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI</family>
+                     <pointsize>9</pointsize>
+                     <weight>75</weight>
+                     <italic>false</italic>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="toolTip">
+                    <string>Plot the current function with initial values as parameters</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(158, 158, 158);
+color: rgb(255, 255, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string>PLOT</string>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>10</width>
+                     <height>10</height>
+                    </size>
+                   </property>
+                   <property name="toolButtonStyle">
+                    <enum>Qt::ToolButtonTextBesideIcon</enum>
+                   </property>
+                   <property name="autoRaise">
+                    <bool>true</bool>
+                   </property>
+                   <property name="arrowType">
+                    <enum>Qt::NoArrow</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="3" column="0">
+                <widget class="QCheckBox" name="Autofit">
+                 <property name="toolTip">
+                  <string>Automatically fit when a new plot is made</string>
+                 </property>
+                 <property name="text">
+                  <string>Auto fit</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="Line" name="line_7">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTabWidget" name="fitIO">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>8</pointsize>
+                </font>
+               </property>
+               <property name="currentIndex">
+                <number>2</number>
+               </property>
+               <widget class="QWidget" name="initTab">
+                <attribute name="title">
+                 <string>Initialize</string>
+                </attribute>
+                <layout class="QVBoxLayout" name="verticalLayout_9">
+                 <property name="spacing">
+                  <number>1</number>
+                 </property>
+                 <property name="margin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QTableWidget" name="parTable">
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI</family>
+                     <pointsize>8</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 255, 255);</string>
+                   </property>
+                   <attribute name="horizontalHeaderCascadingSectionResizes">
+                    <bool>false</bool>
+                   </attribute>
+                   <attribute name="horizontalHeaderDefaultSectionSize">
+                    <number>124</number>
+                   </attribute>
+                   <attribute name="horizontalHeaderHighlightSections">
+                    <bool>false</bool>
+                   </attribute>
+                   <attribute name="horizontalHeaderMinimumSectionSize">
+                    <number>55</number>
+                   </attribute>
+                   <attribute name="horizontalHeaderStretchLastSection">
+                    <bool>true</bool>
+                   </attribute>
+                   <row>
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </row>
+                   <row>
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                   </row>
+                   <row>
+                    <property name="text">
+                     <string>2</string>
+                    </property>
+                   </row>
+                   <row>
+                    <property name="text">
+                     <string>3</string>
+                    </property>
+                   </row>
+                   <row>
+                    <property name="text">
+                     <string>4</string>
+                    </property>
+                   </row>
+                   <row>
+                    <property name="text">
+                     <string>5</string>
+                    </property>
+                   </row>
+                   <row>
+                    <property name="text">
+                     <string>6</string>
+                    </property>
+                   </row>
+                   <row>
+                    <property name="text">
+                     <string>7</string>
+                    </property>
+                   </row>
+                   <row>
+                    <property name="text">
+                     <string>8</string>
+                    </property>
+                   </row>
+                   <row>
+                    <property name="text">
+                     <string>9</string>
+                    </property>
+                   </row>
+                   <column>
+                    <property name="text">
+                     <string>Parameter Name</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Initial Value</string>
+                    </property>
+                   </column>
+                   <item row="0" column="1">
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </item>
+                   <item row="1" column="1">
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </item>
+                   <item row="2" column="1">
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </item>
+                   <item row="3" column="1">
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </item>
+                   <item row="4" column="1">
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </item>
+                   <item row="5" column="1">
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </item>
+                   <item row="6" column="1">
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </item>
+                   <item row="7" column="1">
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </item>
+                   <item row="8" column="1">
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </item>
+                   <item row="9" column="1">
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="resultsTab">
+                <attribute name="title">
+                 <string>Results</string>
+                </attribute>
+                <layout class="QVBoxLayout" name="verticalLayout_10">
+                 <property name="spacing">
+                  <number>1</number>
+                 </property>
+                 <property name="margin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QPlainTextEdit" name="fitResults">
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI Light</family>
+                     <pointsize>10</pointsize>
+                     <weight>9</weight>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 10pt &quot;Segoe UI Light&quot;;
+background-color: rgb(255, 255, 255);</string>
+                   </property>
+                   <property name="plainText">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="tab_4">
+                <attribute name="title">
+                 <string>History</string>
+                </attribute>
+                <layout class="QVBoxLayout" name="verticalLayout_13">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="margin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QTableView" name="fitResultsTable">
+                   <property name="font">
+                    <font>
+                     <pointsize>8</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 255, 255);</string>
+                   </property>
+                   <property name="alternatingRowColors">
+                    <bool>true</bool>
+                   </property>
+                   <property name="gridStyle">
+                    <enum>Qt::SolidLine</enum>
+                   </property>
+                   <property name="sortingEnabled">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="clearFitData">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI</family>
+                     <pointsize>7</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(158, 158, 158);
+color: rgb(255, 255, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string>clear</string>
+                   </property>
+                   <property name="autoRaise">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+          <widget class="QStackedWidget" name="rightStackWidget">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <widget class="QWidget" name="plotsPage">
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QMdiArea" name="mdiArea">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="viewMode">
+                <enum>QMdiArea::TabbedView</enum>
+               </property>
+               <property name="tabPosition">
+                <enum>QTabWidget::South</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="plotToolsFrame">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>65</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_5">
+                <property name="spacing">
+                 <number>1</number>
+                </property>
+                <property name="margin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QToolButton" name="prevPad">
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI Light</family>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Left</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/icons/icons/windows8_icons/Pager/previous.png</normaloff>:/icons/icons/windows8_icons/Pager/previous.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>30</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="popupMode">
+                   <enum>QToolButton::DelayedPopup</enum>
+                  </property>
+                  <property name="toolButtonStyle">
+                   <enum>Qt::ToolButtonTextBesideIcon</enum>
+                  </property>
+                  <property name="autoRaise">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QToolButton" name="nextPad">
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI Light</family>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Right</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/icons/icons/windows8_icons/Pager/next.png</normaloff>:/icons/icons/windows8_icons/Pager/next.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>30</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="popupMode">
+                   <enum>QToolButton::InstantPopup</enum>
+                  </property>
+                  <property name="toolButtonStyle">
+                   <enum>Qt::ToolButtonTextBesideIcon</enum>
+                  </property>
+                  <property name="autoRaise">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_4">
+                  <item>
+                   <spacer name="horizontalSpacer_4">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QToolButton" name="createLegends">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                      <pointsize>8</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string>Creates the legends for the current pad.</string>
+                    </property>
+                    <property name="autoFillBackground">
+                     <bool>false</bool>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(158, 158, 158);
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>CREATE LEGENDS  </string>
+                    </property>
+                    <property name="popupMode">
+                     <enum>QToolButton::InstantPopup</enum>
+                    </property>
+                    <property name="autoRaise">
+                     <bool>true</bool>
+                    </property>
+                    <property name="arrowType">
+                     <enum>Qt::NoArrow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QToolButton" name="unique">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                      <pointsize>8</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string>Gives unique colors and styles to each plot in the current pad.
+click on pad to refresh after applying.</string>
+                    </property>
+                    <property name="autoFillBackground">
+                     <bool>false</bool>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(158, 158, 158);
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>AUTO UNIQUE  </string>
+                    </property>
+                    <property name="popupMode">
+                     <enum>QToolButton::InstantPopup</enum>
+                    </property>
+                    <property name="autoRaise">
+                     <bool>true</bool>
+                    </property>
+                    <property name="arrowType">
+                     <enum>Qt::NoArrow</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_3">
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI Light</family>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Split Canvas</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSpinBox" name="canvasRows">
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI Light</family>
+                      <pointsize>10</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe UI Light&quot;;</string>
+                    </property>
+                    <property name="minimum">
+                     <number>1</number>
+                    </property>
+                    <property name="maximum">
+                     <number>25</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSpinBox" name="canvasColumns">
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI Light</family>
+                      <pointsize>10</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe UI Light&quot;;</string>
+                    </property>
+                    <property name="minimum">
+                     <number>1</number>
+                    </property>
+                    <property name="maximum">
+                     <number>25</number>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSplitter" name="splitter_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <widget class="QComboBox" name="plotString">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>138</width>
+                  <height>35</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>35</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Segoe UI Light</family>
+                  <pointsize>10</pointsize>
+                  <weight>50</weight>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QComboBox {
+     border: 1px solid gray;
+     border-radius: 3px;
+     padding: 1px 18px 1px 3px;
+     min-width:5em;
+
+     font: 10pt &quot;Segoe UI Light&quot;;
+ }
+
+ QComboBox:editable {
+     background: white;
+ }
+
+ QComboBox:!editable, QComboBox::drop-down:editable {
+      background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                  stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+ }
+
+ /* QComboBox gets the &quot;on&quot; state when the popup is open */
+ QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                 stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+ }
+
+ QComboBox:on { /* shift the text when the popup opens */
+     padding-top: 3px;
+     padding-left: 4px;
+ }
+
+ QComboBox::drop-down {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 25px;
+
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+ }
+
+ QComboBox::down-arrow {
+     image: url(:/icons/icons/others/comboArrow.png);
+ }
+
+ QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+     top: 1px;
+     left: 1px;
+ }</string>
+                </property>
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+                <property name="frame">
+                 <bool>false</bool>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Enter plot string here</string>
+                 </property>
+                </item>
+               </widget>
+               <widget class="QToolButton" name="histogramBinning">
+                <property name="maximumSize">
+                 <size>
+                  <width>80</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Segoe UI</family>
+                  <pointsize>8</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(158, 158, 158);
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>BINNING</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="resources.qrc">
+                  <normaloff>:/icons/icons/others/comboArrow.png</normaloff>:/icons/icons/others/comboArrow.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>10</width>
+                  <height>10</height>
+                 </size>
+                </property>
+                <property name="toolButtonStyle">
+                 <enum>Qt::ToolButtonTextBesideIcon</enum>
+                </property>
+                <property name="autoRaise">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QComboBox" name="cutString">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>138</width>
+                  <height>35</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>35</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Segoe UI Light</family>
+                  <pointsize>10</pointsize>
+                  <weight>50</weight>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QComboBox {
+     border: 1px solid gray;
+     border-radius: 3px;
+     padding: 1px 18px 1px 3px;
+     min-width: 5em;
+     font: 10pt &quot;Segoe UI Light&quot;;
+ }
+
+ QComboBox:editable {
+     background: white;
+ }
+
+ QComboBox:!editable, QComboBox::drop-down:editable {
+      background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                  stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+ }
+
+ /* QComboBox gets the &quot;on&quot; state when the popup is open */
+ QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                 stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+ }
+
+ QComboBox:on { /* shift the text when the popup opens */
+     padding-top: 3px;
+     padding-left: 4px;
+ }
+
+ QComboBox::drop-down {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 25px;
+
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+ }
+
+ QComboBox::down-arrow {
+     image: url(:/icons/icons/others/comboArrow.png);
+ }
+
+ QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+     top: 1px;
+     left: 1px;
+ }</string>
+                </property>
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+                <property name="frame">
+                 <bool>false</bool>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Enter cut string here</string>
+                 </property>
+                </item>
+               </widget>
+               <widget class="QToolButton" name="plot">
+                <property name="maximumSize">
+                 <size>
+                  <width>73</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Segoe UI Semibold</family>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(158, 158, 158);
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>  PLOT</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>../../../Desktop/windows8_icons/Charts/positive_dynamic.png</normaloff>../../../Desktop/windows8_icons/Charts/positive_dynamic.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>40</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="checkable">
+                 <bool>false</bool>
+                </property>
+                <property name="checked">
+                 <bool>false</bool>
+                </property>
+                <property name="popupMode">
+                 <enum>QToolButton::InstantPopup</enum>
+                </property>
+                <property name="toolButtonStyle">
+                 <enum>Qt::ToolButtonTextBesideIcon</enum>
+                </property>
+                <property name="autoRaise">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QToolButton" name="plotOptions">
+                <property name="maximumSize">
+                 <size>
+                  <width>65</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Segoe UI</family>
+                  <pointsize>8</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(158, 158, 158);
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>OPTIONS</string>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>10</width>
+                  <height>10</height>
+                 </size>
+                </property>
+                <property name="toolButtonStyle">
+                 <enum>Qt::ToolButtonTextBesideIcon</enum>
+                </property>
+                <property name="autoRaise">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QCheckBox" name="loop">
+                <property name="maximumSize">
+                 <size>
+                  <width>103</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Segoe UI Light</family>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Loop</string>
+                </property>
+               </widget>
+               <widget class="QCheckBox" name="superImpose">
+                <property name="maximumSize">
+                 <size>
+                  <width>179</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Segoe UI Light</family>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Superimpose</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="page_10"/>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionD">
+   <property name="text">
+    <string>d</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
